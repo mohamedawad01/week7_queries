@@ -1,2 +1,2 @@
 # week7_queries
-# Task7
+ Task7
