@@ -27,7 +27,7 @@ WHERE city = 'london';
 
 
 -- --------------- 5 ---------------
-SELECT customers.customerName as c, SUM(priceEach*quantityOrdered)AS totalAmount FROM `customers` JOIN orders JOIN orderdetails
+SELECT customers.customerName , SUM(priceEach*quantityOrdered)AS totalAmount FROM `customers` JOIN orders JOIN orderdetails
 ON customers.customerNumber = orders.customerNumber
 AND orders.orderNumber = orderdetails.orderNumber
 GROUP BY customers.customerName;
